@@ -5,7 +5,15 @@ export interface ArticleListResponse {
   items: {
     articles: {
       article: string;
-      views: number;
+      views_ceil: number;
+    }[];
+  }[];
+}
+
+export interface CountryListResponse {
+  items: {
+    countries: {
+      country: string;
     }[];
   }[];
 }
